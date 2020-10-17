@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT Solution | career job registration</title>
+  <link rel="stylesheet" href="/form.css">
+
+</head>
+<body>
+  <div class="bg-img">
+    <div>
+      <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="first name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder=" last name..">
+    
+        <label for="position">Position</label>
+        <select id="pos" name="position">
+          <option >Frontend developer</option>
+          <option >Backend developer</option>
+          <option >Fullstack developer</option>
+          <option >Python developer</option>
+          <option>Reactjs developer</option>
+        </select>
+    
+      <label for="email">Email id</label>
+      <input type="email" id="email" name="Email" required>
+    
+      <label for="phnum">Phone number</label>
+      <input type="tel" required>
+    
+      <label for="upload">Resume</label>
+      <input type="file" name="file" id="" accept=".doc,application/pdf">
+        <input type="submit" onclick="subm()" value="submit" id="sub">
+      </form>
+    </div>
+  </div>
+
+  <script>
+     function subm(){
+            document.getElementById('sub');
+        alert("sucessfully uploaded");
+        }
+
+
+        /*
+        
+          var bgcolor = new Array("yellow","blue","grey" ,"orange" ,"red","green","black", "beige","dodgerblue")
+        document.body.style.background = bgcolor[Math.floor(Math.random()*bgcolor.length)]
+        */
+      
+        var bgcolor = new Array("yellow","blue","grey" ,"orange" ,"red","green","black", "beige","dodgerblue","#ccffcc")
+        document.body.style.background = bgcolor[Math.floor(Math.random()*bgcolor.length)]
+        
+        
+  </script>
+
+
+<style>
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=tel]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+  input[type=file]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: maroon;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: dodgerblue;
+  }
+  
+  div {
+  
+    margin: 4rem;
+    margin-left: 10rem;
+    width: 70%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  @media screen and (max-width:850px){
+    div{
+      margin-left: 1rem;
+      margin: 0;
+      width: 88%;
+
+    }
+  }
+  .bg-img{
+    background-image: url("https://twenty-tech.com/wp-content/uploads/2018/12/Front-end-developemtn-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+</style>
+</body>
+</html>
